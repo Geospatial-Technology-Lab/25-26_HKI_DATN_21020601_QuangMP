@@ -34,16 +34,13 @@
 </div>
 
 **SalinityCygnss** khai thác dữ liệu **CYGNSS (Cyclone Global Navigation Satellite System)** - công nghệ GNSS-Reflectometry kết hợp các thuật toán **Machine Learning** tiên tiến để lập bản đồ và dự đoán xâm nhập mặn tại Đồng Bằng Sông Cửu Long.
-
 <br>
 
 ### 📍 Các Khu Vực Nghiên Cứu
-
 1. **ĐBSCL 2025** 
 2. **Trà Vinh 2024** 
 3. **Bến Tre 2020** 
 4. **Bạc Liêu 2019** 
-
 <br>
 
 ### 🎯 Ý Nghĩa Nghiên Cứu
