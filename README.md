@@ -1,4 +1,4 @@
-# 🌊 SalinityCygnss
+# SalinityCygnss
 
 <div align="center">
 
@@ -9,48 +9,48 @@
 
 **Lập Bản Đồ Độ Mặn Đất Sử Dụng Dữ Liệu CYGNSS và Học Máy**
 
-<i>Ứng dụng công nghệ viễn thám và học máy tiên tiến để giám sát độ mặn đất tại Đồng Bằng Sông Cửu Long</i>
+*Ứng dụng công nghệ viễn thám và học máy tiên tiến để giám sát độ mặn đất tại Đồng Bằng Sông Cửu Long*
 
-[Tổng Quan](#-tổng-quan) •
-[Tính Năng](#-tính-năng) •
-[Cài Đặt](#-cài-đặt) •
-[Hướng Dẫn](#-hướng-dẫn-sử-dụng) •
-[Cấu Trúc](#-cấu-trúc-dự-án) •
-[Mô Hình](#-các-mô-hình) •
-[Trích Dẫn](#-trích-dẫn)
+[Tổng Quan](#tổng-quan) •
+[Tính Năng](#tính-năng) •
+[Cài Đặt](#cài-đặt) •
+[Hướng Dẫn](#hướng-dẫn-sử-dụng) •
+[Cấu Trúc](#cấu-trúc-dự-án) •
+[Mô Hình](#các-mô-hình) •
+[Trích Dẫn](#trích-dẫn)
 
 </div>
 
 ---
 
-## 📖 Tổng Quan
+## Tổng Quan
 
 **SalinityCygnss** là dự án nghiên cứu khai thác dữ liệu vệ tinh **CYGNSS (Cyclone Global Navigation Satellite System)** kết hợp với các thuật toán **Học Máy (Machine Learning)** để lập bản đồ và dự đoán mức độ mặn đất tại khu vực Đồng Bằng Sông Cửu Long (ĐBSCL) Việt Nam.
 
 Kho mã nguồn này chứa bộ dữ liệu, mô hình đã huấn luyện và kết quả phân tích cho nhiều khu vực nghiên cứu qua các năm:
 
-- 🌾 **Đồng Bằng Sông Cửu Long 2025** - Nghiên cứu toàn diện (Mới nhất)
-- 🌿 **Trà Vinh 2024** - Phân tích khu vực
-- 🏞️ **Bến Tre 2020** - Dữ liệu lịch sử
-- 📍 **Bạc Liêu 2019** - Nghiên cứu nền
+- **Đồng Bằng Sông Cửu Long 2025** - Nghiên cứu toàn diện (Mới nhất)
+- **Trà Vinh 2024** - Phân tích khu vực
+- **Bến Tre 2020** - Dữ liệu lịch sử
+- **Bạc Liêu 2019** - Nghiên cứu nền
 
 ### Tại Sao Cần Giám Sát Độ Mặn Đất?
 
 Xâm nhập mặn là thách thức nghiêm trọng tại ĐBSCL, ảnh hưởng đến:
-- 🌾 Năng suất nông nghiệp
-- 💧 Quản lý nguồn nước
-- 🌱 Tính bền vững hệ sinh thái
-- 👨‍🌾 Sinh kế nông thôn
+- Năng suất nông nghiệp
+- Quản lý nguồn nước
+- Tính bền vững hệ sinh thái
+- Sinh kế nông thôn
 
 Phương pháp đo đạc truyền thống tốn thời gian và chi phí. Dự án này chứng minh cách viễn thám vệ tinh kết hợp ML có thể cung cấp:
-- ✅ Giám sát quy mô lớn
-- ✅ Giải pháp tiết kiệm chi phí
-- ✅ Thông tin gần thời gian thực
-- ✅ Dự đoán độ phân giải không gian cao
+- Giám sát quy mô lớn
+- Giải pháp tiết kiệm chi phí
+- Thông tin gần thời gian thực
+- Dự đoán độ phân giải không gian cao
 
 ---
 
-## 🔄 Quy Trình Nghiên Cứu
+## Quy Trình Nghiên Cứu
 
 ![Sơ đồ quy trình](flowchart.png)
 
@@ -84,7 +84,7 @@ Phương pháp đo đạc truyền thống tốn thời gian và chi phí. Dự 
 6. **Đánh Giá Hiệu Suất**
    - RMSE (Root Mean Square Error)
    - MAE (Mean Absolute Error)
-   - R² (Hệ số xác định)
+   - R (Hệ số tương quan)
 
 7. **Đầu Ra Cuối Cùng**
    - Bản đồ xâm nhập mặn
@@ -93,18 +93,18 @@ Phương pháp đo đạc truyền thống tốn thời gian và chi phí. Dự 
 
 ---
 
-## ✨ Tính Năng
+## Tính Năng
 
-- 🛰️ **Xử Lý Dữ Liệu CYGNSS** - Xử lý và phân tích dữ liệu vệ tinh GNSS-Reflectometry
-- 🤖 **Nhiều Mô Hình ML** - Triển khai và so sánh Random Forest, XGBoost và CatBoost
-- 📊 **Phân Tích Toàn Diện** - Độ quan trọng đặc trưng, đánh giá mô hình và trực quan hóa
-- 🗺️ **Lập Bản Đồ Không Gian** - Tạo bản đồ độ mặn cho các vùng khác nhau
-- 📈 **Chỉ Số Hiệu Suất** - Độ chính xác chi tiết và kết quả kiểm định
-- 🔄 **Quy Trình Tái Tạo** - Notebook Jupyter được tổ chức tốt cho từng nghiên cứu
+- **Xử Lý Dữ Liệu CYGNSS** - Xử lý và phân tích dữ liệu vệ tinh GNSS-Reflectometry
+- **Nhiều Mô Hình ML** - Triển khai và so sánh Random Forest, XGBoost và CatBoost
+- **Phân Tích Toàn Diện** - Độ quan trọng đặc trưng, đánh giá mô hình và trực quan hóa
+- **Lập Bản Đồ Không Gian** - Tạo bản đồ độ mặn cho các vùng khác nhau
+- **Chỉ Số Hiệu Suất** - Độ chính xác chi tiết và kết quả kiểm định
+- **Quy Trình Tái Tạo** - Notebook Jupyter được tổ chức tốt cho từng nghiên cứu
 
 ---
 
-## 🚀 Cài Đặt
+## Cài Đặt
 
 ### Yêu Cầu Hệ Thống
 
@@ -139,7 +139,7 @@ pip install -r requirements.txt
 
 ---
 
-## 📘 Hướng Dẫn Sử Dụng
+## Hướng Dẫn Sử Dụng
 
 ### 1. Khám Phá Notebooks
 
@@ -179,7 +179,7 @@ Kiểm tra thư mục `Model Results` và `Results` để xem:
 
 ---
 
-## 📂 Cấu Trúc Dự Án
+## Cấu Trúc Dự Án
 
 ```
 SalinityCygnss/
@@ -220,7 +220,7 @@ Mỗi thư mục nghiên cứu chứa:
 
 ---
 
-## 🤖 Các Mô Hình
+## Các Mô Hình
 
 Dự án triển khai ba thuật toán học tập tổng hợp hiện đại:
 
@@ -252,7 +252,7 @@ Mỗi mô hình được đánh giá bằng:
 
 ---
 
-## 📊 Kết Quả
+## Kết Quả
 
 Kết quả bao gồm:
 - ✅ Trọng số mô hình đã huấn luyện
@@ -266,7 +266,7 @@ Kết quả bao gồm:
 
 ---
 
-## 🔬 Phương Pháp Luận
+## Phương Pháp Luận
 
 ```mermaid
 graph TB
@@ -290,45 +290,67 @@ graph TB
 
 ---
 
-## 🗺️ Khu Vực Nghiên Cứu
+## Khu Vực Nghiên Cứu
 
 ### Đồng Bằng Sông Cửu Long (ĐBSCL)
 ĐBSCL Việt Nam là một trong những vùng nông nghiệp sản xuất lớn nhất thế giới nhưng đang đối mặt với xâm nhập mặn gia tăng do:
-- 🌊 Mực nước biển dâng
-- 💧 Lượng nước ngọt giảm
-- 🌡️ Tác động biến đổi khí hậu
+- Mực nước biển dâng
+- Lượng nước ngọt giảm
+- Tác động biến đổi khí hậu
 
 Các mô hình của chúng tôi giúp giám sát và dự đoán các mô hình độ mặn để hỗ trợ:
-- 🌾 Quy hoạch cây trồng
-- 💧 Quản lý nguồn nước
-- 📋 Quyết định chính sách
+- Quy hoạch cây trồng
+- Quản lý nguồn nước
+- Quyết định chính sách
 
 ---
 
-## 🔧 Nguồn Dữ Liệu
+## Nguồn Dữ Liệu
 
-- **Dữ Liệu CYGNSS**: NASA CYGNSS Level 1 Science Data Record
-- **Dữ Liệu Thực Địa**: Đo đạc hiện trường từ các khu vực nghiên cứu
-- **Dữ Liệu Phụ Trợ**: 
-  - Mô hình số độ cao (DEM)
-  - Sử dụng đất/lớp phủ
-  - Tính chất đất
-  - Biến khí hậu
+<div align="center">
+
+![SAE Logo](sae_logo.png)
+
+**VIỆN CÔNG NGHỆ HÀNG KHÔNG VŨ TRỤ**  
+**Trường Đại Học Công Nghệ - Đại Học Quốc Gia Hà Nội**
+
+</div>
+
+### Dữ Liệu Chính
+
+- **Dữ Liệu CYGNSS**
+  - Nguồn: NASA CYGNSS Level 1 Science Data Record
+  - Cung cấp bởi: **ThS. Hoàng Tích Phúc**
+  - Email: phucth@vnu.edu.vn
+  - Đơn vị: Viện Công Nghệ Hàng Không Vũ Trụ - Trường ĐH Công Nghệ - ĐHQG Hà Nội
+
+- **Dữ Liệu Điểm Mặn Thực Tế**
+  - Đo đạc hiện trường từ các khu vực nghiên cứu
+  - Cung cấp bởi: **TS. Hà Minh Cường**
+  - Email: cuonghm@vnu.edu.vn
+  - Đơn vị: Viện Công Nghệ Hàng Không Vũ Trụ - Trường ĐH Công Nghệ - ĐHQG Hà Nội
+
+### Dữ Liệu Phụ Trợ
+
+- Mô hình số độ cao (DEM)
+- Sử dụng đất/lớp phủ
+- Tính chất đất
+- Biến khí hậu
 
 ---
 
-## 📈 Công Việc Tương Lai
+## Công Việc Tương Lai
 
-- [ ] Hệ thống dự đoán thời gian thực
-- [ ] Dashboard trực quan hóa trên web
-- [ ] Tích hợp thêm nguồn dữ liệu vệ tinh
-- [ ] Triển khai mô hình deep learning
-- [ ] Pipeline dữ liệu tự động
-- [ ] API cho dự đoán độ mặn
+- Hệ thống dự đoán thời gian thực
+- Dashboard trực quan hóa trên web
+- Tích hợp thêm nguồn dữ liệu vệ tinh
+- Triển khai mô hình deep learning
+- Pipeline dữ liệu tự động
+- API cho dự đoán độ mặn
 
 ---
 
-## 🤝 Đóng Góp
+## Đóng Góp
 
 Chúng tôi hoan nghênh mọi đóng góp! Vui lòng tạo Pull Request.
 
@@ -340,32 +362,33 @@ Chúng tôi hoan nghênh mọi đóng góp! Vui lòng tạo Pull Request.
 
 ---
 
-## 📄 Giấy Phép
+## Giấy Phép
 
 Dự án này được cấp phép theo Giấy phép MIT - xem file [LICENSE](LICENSE) để biết chi tiết.
 
 ---
 
-## 📧 Liên Hệ
+## Liên Hệ
 
 **Tác Giả**: [Tên của bạn]  
 **Email**: [email@example.com]  
-**Tổ Chức**: [Trường/Tổ chức của bạn]
+**Tổ Chức**: Viện Công Nghệ Hàng Không Vũ Trụ - Trường ĐH Công Nghệ - ĐHQG Hà Nội
 
-**Link Dự Án**: [https://github.com/quanguet0409/SalinityCygnss](https://github.com/quanguet0409/SalinityCygnss)
+**Project Link**: [https://github.com/quanguet0409/SalinityCygnss](https://github.com/quanguet0409/SalinityCygnss)
 
 ---
 
-## 🙏 Lời Cảm Ơn
+## Lời Cảm Ơn
 
 - NASA CYGNSS mission đã cung cấp dữ liệu vệ tinh
-- [Tổ chức/nguồn tài trợ của bạn]
+- Viện Công Nghệ Hàng Không Vũ Trụ - Trường ĐH Công Nghệ - ĐHQG Hà Nội
+- TS. Hà Minh Cường và ThS. Hoàng Tích Phúc đã cung cấp dữ liệu và hỗ trợ kỹ thuật
 - Các cộng tác viên và đội ngũ thực địa
 - Cộng đồng mã nguồn mở
 
 ---
 
-## 📚 Trích Dẫn
+## Trích Dẫn
 
 Nếu bạn sử dụng công trình này trong nghiên cứu, vui lòng trích dẫn:
 
