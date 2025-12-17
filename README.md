@@ -24,6 +24,10 @@
 **[📊 Kết Quả](#-kết-quả)** |
 **[📚 Nguồn Dữ Liệu](#-nguồn-dữ-liệu)**
 
+---
+
+[English](README.en.md) | **Tiếng Việt**
+
 </div>
 
 <br>
