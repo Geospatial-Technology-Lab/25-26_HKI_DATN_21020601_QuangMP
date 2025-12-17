@@ -41,7 +41,7 @@ Xâm nhập mặn là một trong những thách thức lớn nhất tại ĐBSC
 
 <div align="center">
 
-![Sơ đồ quy trình](flowchart.png)
+![Sơ đồ quy trình](assets/flowchart.png)
 
 *Hình 1: Quy trình nghiên cứu xâm nhập mặn sử dụng CYGNSS và Machine Learning*
 
@@ -172,12 +172,52 @@ Ba mô hình machine learning được huấn luyện và đánh giá trên tậ
 
 <div align="center">
 
-| Thuật toán | Tập huấn luyện ||| Tập kiểm tra |||
-|:--------|:---:|:---:|:---:|:---:|:---:|:---:|
-| | **RMSE (dS/m)** | **MAE (dS/m)** | **R** | **RMSE (dS/m)** | **MAE (dS/m)** | **R** |
-| Random Forest | 1.59 | 0.77 | 0.94 | 2.73 | 1.37 | 0.78 |
-| **XGBoost** ⭐ | **1.37** | **0.69** | **0.95** | **2.55** | **1.31** | **0.81** |
-| CatBoost | 1.72 | 0.96 | 0.94 | 2.65 | 1.36 | 0.80 |
+<table>
+<thead>
+  <tr>
+    <th rowspan="2">Thuật toán</th>
+    <th colspan="3">Tập huấn luyện</th>
+    <th colspan="3">Tập kiểm tra</th>
+  </tr>
+  <tr>
+    <th>RMSE (dS/m)</th>
+    <th>MAE (dS/m)</th>
+    <th>R</th>
+    <th>RMSE (dS/m)</th>
+    <th>MAE (dS/m)</th>
+    <th>R</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td>Random Forest</td>
+    <td>1.59</td>
+    <td>0.77</td>
+    <td>0.94</td>
+    <td>2.73</td>
+    <td>1.37</td>
+    <td>0.78</td>
+  </tr>
+  <tr>
+    <td><strong>XGBoost</strong> ⭐</td>
+    <td><strong>1.37</strong></td>
+    <td><strong>0.69</strong></td>
+    <td><strong>0.95</strong></td>
+    <td><strong>2.55</strong></td>
+    <td><strong>1.31</strong></td>
+    <td><strong>0.81</strong></td>
+  </tr>
+  <tr>
+    <td>CatBoost</td>
+    <td>1.72</td>
+    <td>0.96</td>
+    <td>0.94</td>
+    <td>2.65</td>
+    <td>1.36</td>
+    <td>0.80</td>
+  </tr>
+</tbody>
+</table>
 
 </div>
 
@@ -223,33 +263,33 @@ Kết quả dự đoán xâm nhập mặn cho 5 tháng đầu năm 2025 tại Đ
 <details>
 <summary><b>CatBoost - Nhấp để xem 5 tháng</b></summary>
 
-![Tháng 1](CB_1.jpg)
-![Tháng 2](CB_2.jpg)
-![Tháng 3](CB_3.jpg)
-![Tháng 4](CB_4.jpg)
-![Tháng 5](CB_5.jpg)
+![Tháng 1](assets/CB_1.jpg)
+![Tháng 2](assets/CB_2.jpg)
+![Tháng 3](assets/CB_3.jpg)
+![Tháng 4](assets/CB_4.jpg)
+![Tháng 5](assets/CB_5.jpg)
 
 </details>
 
 <details>
 <summary><b>Random Forest - Nhấp để xem 5 tháng</b></summary>
 
-![Tháng 1](RF_1.jpg)
-![Tháng 2](RF_2.jpg)
-![Tháng 3](RF_3.jpg)
-![Tháng 4](RF_4.jpg)
-![Tháng 5](RF_5.jpg)
+![Tháng 1](assets/RF_1.jpg)
+![Tháng 2](assets/RF_2.jpg)
+![Tháng 3](assets/RF_3.jpg)
+![Tháng 4](assets/RF_4.jpg)
+![Tháng 5](assets/RF_5.jpg)
 
 </details>
 
 <details>
 <summary><b>XGBoost - Nhấp để xem 5 tháng</b></summary>
 
-![Tháng 1](XGB_1.jpg)
-![Tháng 2](XGB_2.jpg)
-![Tháng 3](XGB_3.jpg)
-![Tháng 4](XGB_4.jpg)
-![Tháng 5](XGB_5.jpg)
+![Tháng 1](assets/XGB_1.jpg)
+![Tháng 2](assets/XGB_2.jpg)
+![Tháng 3](assets/XGB_3.jpg)
+![Tháng 4](assets/XGB_4.jpg)
+![Tháng 5](assets/XGB_5.jpg)
 
 </details>
 
@@ -270,7 +310,7 @@ Các features được sử dụng bao gồm:
 
 <div align="center">
 
-![SAE Logo](sae_logo.png)
+![SAE Logo](assets/sae_logo.png)
 
 **VIỆN CÔNG NGHỆ HÀNG KHÔNG VŨ TRỤ**  
 Trường Đại Học Công Nghệ - Đại Học Quốc Gia Hà Nội
