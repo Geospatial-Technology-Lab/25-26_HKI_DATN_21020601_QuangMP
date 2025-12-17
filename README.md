@@ -32,8 +32,7 @@
 ### Ý Nghĩa Nghiên Cứu
 
 Xâm nhập mặn là một trong những thách thức lớn nhất tại ĐBSCL, ảnh hưởng trực tiếp đến 19 triệu dân và nguồn lương thực quốc gia. Dự án cung cấp:
-- Giải pháp giám sát real-time, chi phí thấp
-- Bản đồ độ phân giải không gian cao (30m)
+- Giải pháp giám sát, chi phí thấp
 - Hỗ trợ quy hoạch nông nghiệp và quản lý tài nguyên nước
 
 ---
