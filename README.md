@@ -8,7 +8,7 @@
 
 **Dự Đoán Xâm Nhập Mặn Bằng Dữ Liệu CYGNSS và Học Máy**
 
-*Ứng dụng viễn thám vệ tinh và machine learning để giám sát xâm nhập mặn tại Đồng Bằng Sông Cửu Long*
+*Ứng dụng công nghệ GNSS-R và Machine Learning để lập bản đồ xâm nhập mặn tại Đồng Bằng Sông Cửu Long*
 
 ---
 
@@ -20,18 +20,21 @@
 
 ## Giới Thiệu
 
-**SalinityCygnss** khai thác dữ liệu vệ tinh **CYGNSS** kết hợp **Machine Learning** (Random Forest, XGBoost, CatBoost) để lập bản đồ và dự đoán xâm nhập mặn tại Đồng Bằng Sông Cửu Long.
+**SalinityCygnss** khai thác dữ liệu **CYGNSS (Cyclone Global Navigation Satellite System)** - công nghệ GNSS-Reflectometry kết hợp các thuật toán **Machine Learning** tiên tiến (Random Forest, XGBoost, CatBoost) để lập bản đồ và dự đoán xâm nhập mặn tại Đồng Bằng Sông Cửu Long.
 
 ### Các Khu Vực Nghiên Cứu
 
-- **Đồng Bằng Sông Cửu Long 2025** - Nghiên cứu toàn diện
+- **Đồng Bằng Sông Cửu Long 2025** - Nghiên cứu toàn diện (5 tháng: 1-5/2025)
 - **Trà Vinh 2024** - Phân tích khu vực
-- **Bến Tre 2020** - Dữ liệu lịch sử
-- **Bạc Liêu 2019** - Nghiên cứu nền
+- **Bến Tre 2020** - Dữ liệu so sánh
+- **Bạc Liêu 2019** - Baseline
 
-### Tại Sao Quan Trọng?
+### Ý Nghĩa Nghiên Cứu
 
-Xâm nhập mặn đang ảnh hưởng nghiêm trọng đến ĐBSCL do biến đổi khí hậu, mực nước biển dâng và lượng nước ngọt giảm. Dự án này cung cấp giải pháp giám sát quy mô lớn, tiết kiệm chi phí với độ phân giải cao.
+Xâm nhập mặn là một trong những thách thức lớn nhất tại ĐBSCL, ảnh hưởng trực tiếp đến 19 triệu dân và nguồn lương thực quốc gia. Dự án cung cấp:
+- Giải pháp giám sát real-time, chi phí thấp
+- Bản đồ độ phân giải không gian cao (30m)
+- Hỗ trợ quy hoạch nông nghiệp và quản lý tài nguyên nước
 
 ---
 
@@ -45,13 +48,22 @@ Xâm nhập mặn đang ảnh hưởng nghiêm trọng đến ĐBSCL do biến �
 
 ### Các Bước Chính
 
-1. **Thu Thập Dữ Liệu** → DEM, khí tượng, CYGNSS, viễn thám, thổ nhưỡng
-2. **Dữ Liệu Thực Địa** → Đo mặn thực địa, kiểm chứng phòng thí nghiệm
-3. **Tiền Xử Lý** → Làm sạch, chuẩn hóa, tạo bộ dữ liệu
+1. **Thu Thập Dữ Liệu**
+   - Dữ liệu CYGNSS: SR (Surface Reflectivity), SM (Soil Moisture)
+   - Viễn thám: NDVI, NDSI, LST, LULC
+   - Địa hình: DEM (Digital Elevation Model)
+   - Thổ nhưỡng: Sand, Clay, Bulk Density
+   - Salinity Index: SI1-SI5
+
+2. **Dữ Liệu Thực Địa** → Đo điểm mặn thực địa EC (dS/m)
+
+3. **Tiền Xử Lý** → Chuẩn hóa, tạo training/testing dataset (70/30)
+
 4. **Mô Hình Hóa** → Random Forest, XGBoost, CatBoost
-5. **Kiểm Định** → K-Fold Cross Validation
-6. **Đánh Giá** → RMSE, MAE, R (hệ số tương quan)
-7. **Kết Quả** → Bản đồ xâm nhập mặn, bản đồ phân bố độ mặn
+
+5. **Đánh Giá** → R (Correlation), RMSE, MAE, K-Fold Validation
+
+6. **Xuất Kết Quả** → Bản đồ xâm nhập mặn theo tháng (1-5/2025)
 
 ---
 
@@ -144,14 +156,34 @@ Xử lý đặc trưng phân loại tốt, hỗ trợ GPU, tốc độ dự đo�
 
 ## Kết Quả
 
-Mỗi nghiên cứu cung cấp:
-- Mô hình đã huấn luyện
-- Chỉ số hiệu suất (R, RMSE, MAE)
-- Feature importance rankings
-- Bản đồ dự đoán xâm nhập mặn
-- Validation plots
+### Hiệu Suất Mô Hình
 
-*Chi tiết trong thư mục `Results/` và `Model Results/`*
+Ba mô hình (RF, XGBoost, CatBoost) được đánh giá dựa trên:
+- **R (Correlation Coefficient)** - Hệ số tương quan
+- **RMSE (Root Mean Square Error)** - Sai số bình phương trung bình
+- **MAE (Mean Absolute Error)** - Sai số tuyệt đối trung bình
+
+### Bản Đồ Xâm Nhập Mặn Tháng 1/2025
+
+#### CatBoost - Tháng 1
+![CatBoost Tháng 1](CB_1.jpg)
+
+#### Random Forest - Tháng 1
+![Random Forest Tháng 1](RF_1.jpg)
+
+#### XGBoost - Tháng 1
+![XGBoost Tháng 1](XGB_1.jpg)
+
+### Features Quan Trọng
+
+Các features được sử dụng bao gồm:
+- **CYGNSS Data**: SR (Surface Reflectivity), SM (Soil Moisture)
+- **Spectral Indices**: NDVI, NDSI, Salinity Index (SI1-SI5)
+- **Environmental**: LST (Land Surface Temperature), DEM
+- **Soil Properties**: Sand, Clay, Bulk Density
+- **Land Use**: LULC, SWIR1, SWIR2
+
+*Kết quả chi tiết và bản đồ các tháng khác có trong `Mekong2025/Results/`*
 
 ---
 
