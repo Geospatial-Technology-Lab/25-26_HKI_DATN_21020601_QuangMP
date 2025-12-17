@@ -177,8 +177,8 @@ Ba mô hình machine learning được huấn luyện và đánh giá trên tậ
 |:--------|:---:|:---:|:---:|:---:|:---:|:---:|
 | | **RMSE (dS/m)** | **MAE (dS/m)** | **R** | **RMSE (dS/m)** | **MAE (dS/m)** | **R** |
 | Random Forest | 1.59 | 0.77 | 0.94 | 2.73 | 1.37 | 0.78 |
-| XGBoost | 1.37 | 0.69 | 0.95 | 2.55 | 1.31 | 0.81 |
-| **CatBoost** ⭐ | **1.72** | **0.96** | **0.94** | **2.65** | **1.36** | **0.80** |
+| **XGBoost** ⭐ | **1.37** | **0.69** | **0.95** | **2.55** | **1.31** | **0.81** |
+| CatBoost | 1.72 | 0.96 | 0.94 | 2.65 | 1.36 | 0.80 |
 
 </div>
 
@@ -210,31 +210,6 @@ Ba mô hình machine learning được huấn luyện và đánh giá trên tậ
 - **XGBoost** cho kết quả tốt nhất với RMSE thấp nhất (2.55 dS/m) và R cao nhất (0.81) trên tập kiểm tra
 - **Random Forest** có độ ổn định cao nhưng RMSE cao hơn (2.73 dS/m)
 - **CatBoost** cân bằng giữa hiệu suất và thời gian huấn luyện
-
-
-
-#### Bảng So Sánh Hiệu Suất
-
-| Tháng | Mô Hình | R | RMSE (dS/m) | MAE (dS/m) |
-|-------|---------|-------|-------------|-----------|
-| **Tháng 1** | Random Forest | 0.XX | X.XX | X.XX |
-| | XGBoost | 0.XX | X.XX | X.XX |
-| | **CatBoost** | **0.XX** | **X.XX** | **X.XX** |
-| **Tháng 2** | Random Forest | 0.XX | X.XX | X.XX |
-| | XGBoost | 0.XX | X.XX | X.XX |
-| | **CatBoost** | **0.XX** | **X.XX** | **X.XX** |
-| **Tháng 3** | Random Forest | 0.XX | X.XX | X.XX |
-| | XGBoost | 0.XX | X.XX | X.XX |
-| | **CatBoost** | **0.XX** | **X.XX** | **X.XX** |
-| **Tháng 4** | Random Forest | 0.XX | X.XX | X.XX |
-| | XGBoost | 0.XX | X.XX | X.XX |
-| | **CatBoost** | **0.XX** | **X.XX** | **X.XX** |
-| **Tháng 5** | Random Forest | 0.XX | X.XX | X.XX |
-| | XGBoost | 0.XX | X.XX | X.XX |
-| | **CatBoost** | **0.XX** | **X.XX** | **X.XX** |
-
-> **Lưu ý**: Cập nhật các giá trị R, RMSE, MAE từ kết quả thực tế trong notebooks hoặc file kết quả của bạn.
-> Mô hình tốt nhất: **R cao nhất**, **RMSE và MAE thấp nhất**.
 
 
 
