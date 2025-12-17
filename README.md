@@ -110,8 +110,8 @@ graph LR
     A --> C[An Ninh Lương Thực]
     B --> D[🎯 Giải Pháp Của Chúng Tôi]
     C --> D
-    D --> E[Giám Sát Real-time]
-    D --> F[Bản Đồ Độ Phân Giải Cao]
+    D --> E[Giám Sát]
+    D --> F[Bản Đồ Mức Độ]
     D --> G[Quy Hoạch Nông Nghiệp]
     style D fill:#00cc66,stroke:#333,stroke-width:3px,color:#fff
 ```
@@ -795,7 +795,7 @@ Dự án sử dụng giấy phép **MIT** - xem [LICENSE](LICENSE) để biết 
 <td align="center">
   <img src="https://img.icons8.com/fluency/96/000000/user-male-circle.png" width="60px"/><br>
   <b>ThS. Hoàng Tích Phúc</b><br>
-  <sub>Cung cấp dữ liệu</sub>
+  <sub>Giảng viên hướng dẫn</sub>
 </td>
 <td align="center">
   <img src="https://img.icons8.com/fluency/96/000000/university.png" width="60px"/><br>
