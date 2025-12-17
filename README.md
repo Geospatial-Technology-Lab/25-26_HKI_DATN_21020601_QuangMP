@@ -49,9 +49,10 @@ Xâm nhập mặn là một trong những thách thức lớn nhất tại ĐBSC
 ### Các Bước Chính
 
 1. **Thu Thập Dữ Liệu**
-   - Dữ liệu CYGNSS: SR (Surface Reflectivity), SM (Soil Moisture)
+   - Dữ liệu CYGNSS: SR (Surface Reflectivity)
    - Viễn thám: NDVI, NDSI, LST, LULC
    - Địa hình: DEM (Digital Elevation Model)
+   - Environmental: SM (Soil Moisture)
    - Thổ nhưỡng: Sand, Clay, Bulk Density
    - Salinity Index: SI1-SI5
 
@@ -163,23 +164,56 @@ Ba mô hình (RF, XGBoost, CatBoost) được đánh giá dựa trên:
 - **RMSE (Root Mean Square Error)** - Sai số bình phương trung bình
 - **MAE (Mean Absolute Error)** - Sai số tuyệt đối trung bình
 
-### Bản Đồ Xâm Nhập Mặn Tháng 1/2025
+### Bản Đồ Xâm Nhập Mặn (Tháng 1-5/2025)
 
-#### CatBoost - Tháng 1
-![CatBoost Tháng 1](CB_1.jpg)
+#### CatBoost
 
-#### Random Forest - Tháng 1
-![Random Forest Tháng 1](RF_1.jpg)
+````carousel
+![Tháng 1](CB_1.jpg)
+<!-- slide -->
+![Tháng 2](CB_2.jpg)
+<!-- slide -->
+![Tháng 3](CB_3.jpg)
+<!-- slide -->
+![Tháng 4](CB_4.jpg)
+<!-- slide -->
+![Tháng 5](CB_5.jpg)
+````
 
-#### XGBoost - Tháng 1
-![XGBoost Tháng 1](XGB_1.jpg)
+#### Random Forest
+
+````carousel
+![Tháng 1](RF_1.jpg)
+<!-- slide -->
+![Tháng 2](RF_2.jpg)
+<!-- slide -->
+![Tháng 3](RF_3.jpg)
+<!-- slide -->
+![Tháng 4](RF_4.jpg)
+<!-- slide -->
+![Tháng 5](RF_5.jpg)
+````
+
+#### XGBoost
+
+````carousel
+![Tháng 1](XGB_1.jpg)
+<!-- slide -->
+![Tháng 2](XGB_2.jpg)
+<!-- slide -->
+![Tháng 3](XGB_3.jpg)
+<!-- slide -->
+![Tháng 4](XGB_4.jpg)
+<!-- slide -->
+![Tháng 5](XGB_5.jpg)
+````
 
 ### Features Quan Trọng
 
 Các features được sử dụng bao gồm:
-- **CYGNSS Data**: SR (Surface Reflectivity), SM (Soil Moisture)
+- **CYGNSS Data**: SR (Surface Reflectivity)
 - **Spectral Indices**: NDVI, NDSI, Salinity Index (SI1-SI5)
-- **Environmental**: LST (Land Surface Temperature), DEM
+- **Environmental**: SM (Soil Moisture), LST (Land Surface Temperature), DEM
 - **Soil Properties**: Sand, Clay, Bulk Density
 - **Land Use**: LULC, SWIR1, SWIR2
 
@@ -224,8 +258,8 @@ Dự án sử dụng giấy phép MIT - xem [LICENSE](LICENSE).
 
 ## Liên Hệ
 
-**Tác Giả**: [Tên của bạn]  
-**Email**: [email@example.com]  
+**Tác Giả**: Phạm Minh Quang  
+**Email**: quanghieuminh14@gmail.com  
 **Tổ Chức**: Viện Công Nghệ Hàng Không Vũ Trụ - ĐH Công Nghệ - ĐHQG Hà Nội
 
 **GitHub**: [https://github.com/quanguet0409/SalinityCygnss](https://github.com/quanguet0409/SalinityCygnss)
@@ -245,7 +279,7 @@ Dự án sử dụng giấy phép MIT - xem [LICENSE](LICENSE).
 
 ```bibtex
 @software{SalinityCygnss2025,
-  author = {Tên Của Bạn},
+  author = {Phạm Minh Quang},
   title = {SalinityCygnss: Dự Đoán Xâm Nhập Mặn Bằng Dữ Liệu CYGNSS và Học Máy},
   year = {2025},
   publisher = {GitHub},
