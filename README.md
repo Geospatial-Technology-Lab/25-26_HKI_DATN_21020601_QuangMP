@@ -77,23 +77,19 @@
 <tr>
 <td align="center" width="25%">
   <img src="https://img.icons8.com/fluency/96/000000/geography.png" width="60px"/><br>
-  <b>ĐBSCL 2025</b><br>
-  <sub>Nghiên cứu toàn diện<br>(5 tháng: 1-5/2025)</sub>
+  <b>ĐBSCL 2025</b>
 </td>
 <td align="center" width="25%">
   <img src="https://img.icons8.com/fluency/96/000000/map-marker.png" width="60px"/><br>
-  <b>Trà Vinh 2024</b><br>
-  <sub>Phân tích khu vực</sub>
+  <b>Trà Vinh 2024</b>
 </td>
 <td align="center" width="25%">
   <img src="https://img.icons8.com/fluency/96/000000/marker.png" width="60px"/><br>
-  <b>Bến Tre 2020</b><br>
-  <sub>Dữ liệu so sánh</sub>
+  <b>Bến Tre 2020</b>
 </td>
 <td align="center" width="25%">
   <img src="https://img.icons8.com/fluency/96/000000/place-marker.png" width="60px"/><br>
-  <b>Bạc Liêu 2019</b><br>
-  <sub>Baseline</sub>
+  <b>Bạc Liêu 2019</b>
 </td>
 </tr>
 </table>
@@ -832,12 +828,4 @@ Dự án sử dụng giấy phép **MIT** - xem [LICENSE](LICENSE) để biết 
   <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=100&section=footer" width="100%"/>
 </div>
 
-<div align="center">
-  
-  **⭐ Nếu thấy dự án hữu ích, hãy cho chúng tôi một ngôi sao! ⭐**
-  
-  <br>
-  
-  Được tạo với ❤️ bởi Phạm Minh Quang
-  
-</div>
+
